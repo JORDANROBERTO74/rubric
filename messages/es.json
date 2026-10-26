@@ -1,0 +1,151 @@
+{
+  "meta": {
+    "title": "Rubric — Operaciones de IA con gobierno",
+    "description": "Rubric convierte el trabajo de un agente de IA en un registro de decisión: la evidencia que usó, el riesgo que encontró, quién lo aprobó, qué se ejecutó y qué cambió."
+  },
+  "nav": {
+    "home": "Inicio de Rubric",
+    "primary": "Principal",
+    "skip": "Saltar al contenido",
+    "product": "Producto",
+    "demo": "Demo",
+    "governance": "Gobierno",
+    "developers": "Desarrollo",
+    "source": "Código",
+    "openMenu": "Abrir menú"
+  },
+  "hero": {
+    "eyebrow": "Operaciones de IA con gobierno",
+    "title": "Cada acción del agente,\nen el registro.",
+    "lead": "Rubric convierte el trabajo de un agente en una decisión que puedes revisar: la evidencia que usó, el riesgo que encontró, quién la aprobó, qué se ejecutó y qué cambió.",
+    "primary": "Ver el flujo de decisión",
+    "secondary": "Leer el código",
+    "note": "Demo guionizada. Sin datos reales.",
+    "record": {
+      "label": "Registro de decisión",
+      "account": "Cuenta",
+      "accountValue": "Acme",
+      "signal": "Señal",
+      "signalValue": "Volumen de soporte +38%, uso de la plataforma −17%",
+      "risk": "Riesgo",
+      "riskValue": "Alto",
+      "confidence": "Confianza",
+      "confidenceValue": "82%",
+      "gate": "Compuerta",
+      "gateValue": "Aprobación humana",
+      "status": "Estado",
+      "statusValue": "Aprobada · registrada"
+    }
+  },
+  "demo": {
+    "eyebrow": "Míralo en acción",
+    "title": "De una mención a una acción gobernada",
+    "lead": "Alguien pregunta en un hilo. El agente reúne evidencia de tickets, uso, facturación y CRM, evalúa el riesgo, solicita una aprobación, ejecuta y escribe el registro. Dos escenarios se alternan en bucle: riesgo de abandono y migración silenciosa.",
+    "note": "La interfaz del demo está en inglés."
+  },
+  "product": {
+    "eyebrow": "Producto",
+    "title": "Un objeto de decisión, no un chat",
+    "lead": "Casi todos los agentes cuentan lo que hicieron. Rubric conserva la estructura que permite que otra persona lo verifique.",
+    "items": [
+      {
+        "index": "01",
+        "title": "Evidencia, no intuición",
+        "body": "Cada afirmación enlaza al ticket, la factura, la fila de uso o el campo de CRM del que salió. Si falta la fuente, la decisión lo declara."
+      },
+      {
+        "index": "02",
+        "title": "Riesgo con umbral",
+        "body": "El agente puntúa la decisión contra tu política y se detiene cuando la confianza no alcanza para la acción que propone."
+      },
+      {
+        "index": "03",
+        "title": "Compuertas humanas",
+        "body": "Las aprobaciones son explícitas y por rol. Nada se ejecuta hasta que la persona correcta acepta la acción propuesta."
+      },
+      {
+        "index": "04",
+        "title": "Ejecución con recibos",
+        "body": "Cada paso es una llamada registrada: qué se ejecutó, en qué orden y qué devolvió. Los fallos forman parte del registro, no se ocultan."
+      },
+      {
+        "index": "05",
+        "title": "Una sola bitácora",
+        "body": "Entrada, evidencia, riesgo, aprobación, ejecución y resultado comparten un identificador que puedes reproducir después."
+      }
+    ]
+  },
+  "how": {
+    "eyebrow": "Cómo funciona",
+    "title": "Tres pasos, un registro",
+    "steps": [
+      {
+        "index": "01",
+        "title": "Preguntar",
+        "body": "Alguien pregunta donde ya ocurre el trabajo. El agente resuelve quién pregunta, para qué cuenta y bajo qué política."
+      },
+      {
+        "index": "02",
+        "title": "Decidir",
+        "body": "Consulta los sistemas conectados, fundamenta cada afirmación, puntúa el riesgo y propone una acción con su nivel de confianza."
+      },
+      {
+        "index": "03",
+        "title": "Certificar",
+        "body": "Una persona aprueba o rechaza. La acción se ejecuta dentro de su alcance y cada paso cierra el registro."
+      }
+    ]
+  },
+  "governance": {
+    "eyebrow": "Gobierno",
+    "title": "El control es el producto",
+    "lead": "El gobierno no es una pantalla de ajustes añadida al final. Es la forma de cada decisión.",
+    "items": [
+      {
+        "title": "Aprobación antes del efecto",
+        "body": "Las decisiones de alto riesgo no se ejecutan sin un aprobador con nombre. La compuerta queda registrada junto con la decisión."
+      },
+      {
+        "title": "Acceso acotado",
+        "body": "El agente lee con las credenciales más estrechas que responden la pregunta y escribe solo dentro de una acción aprobada."
+      },
+      {
+        "title": "Reproducible",
+        "body": "Las mismas entradas producen el mismo registro, así que una revisión de incidente no depende de la memoria de alguien sobre el hilo."
+      },
+      {
+        "title": "Acciones delimitadas",
+        "body": "Cada acción declara su radio: qué toca, a quién notifica y qué no hará."
+      }
+    ]
+  },
+  "developers": {
+    "eyebrow": "Desarrollo",
+    "title": "Una decisión es un objeto que puedes inspeccionar",
+    "lead": "El demo de esta página modela la misma forma que usaría una integración: entra evidencia, se evalúa el riesgo, se pide aprobación, se ejecuta la acción y se cierra el registro.",
+    "points": [
+      "La evidencia y la política son entradas explícitas, no texto de prompt.",
+      "El riesgo y la confianza vuelven como campos, no como prosa.",
+      "La aprobación y la ejecución son pasos separados y auditables."
+    ],
+    "caption": "Esbozo de API · no es un SDK publicado",
+    "docs": "Leer el código"
+  },
+  "cta": {
+    "title": "Pon el trabajo del agente en el registro",
+    "lead": "Lee el código, corre el demo en local o usa el modelo de decisión como punto de partida para tu propio agente.",
+    "primary": "Leer el código",
+    "secondary": "Volver al demo"
+  },
+  "footer": {
+    "tagline": "Rubric es un concepto de producto y un demo open source. El agente que ves aquí está guionizado; no está conectado a sistemas reales.",
+    "license": "Licencia MIT",
+    "source": "Código en GitHub",
+    "rights": "© 2026 Rubric"
+  },
+  "notFound": {
+    "title": "Página no encontrada",
+    "body": "Esa ruta no existe. El demo solo tiene una página.",
+    "back": "Volver al inicio"
+  }
+}

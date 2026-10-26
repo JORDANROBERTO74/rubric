@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 44 36% 94%;
+    --foreground: 210 20% 8%;
+    --card: 44 30% 98%;
+    --card-foreground: 210 20% 8%;
+    --popover: 44 30% 98%;
+    --popover-foreground: 210 20% 8%;
+    --primary: 9 63% 48%;
+    --primary-foreground: 44 36% 96%;
+    --secondary: 44 22% 88%;
+    --secondary-foreground: 210 20% 8%;
+    --muted: 44 22% 88%;
+    --muted-foreground: 213 7% 31%;
+    --accent: 44 22% 88%;
+    --accent-foreground: 210 20% 8%;
+    --destructive: 0 62% 42%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 41 20% 81%;
+    --input: 41 20% 81%;
+    --ring: 9 63% 48%;
+    --approval: 152 39% 30%;
+    --radius: 0.25rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "kern", "liga";
+  }
+
+  ::selection {
+    background: hsl(var(--primary));
+    color: hsl(var(--primary-foreground));
+  }
+
+  @media screen and (min-width: 768px) {
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: hsl(var(--border));
+      border-radius: 999px;
+    }
+  }
+}
+
+@layer components {
+  .rule {
+    @apply border-t border-border;
+  }
+
+  .eyebrow {
+    @apply font-mono text-[11px] uppercase tracking-[0.22em] text-muted-foreground;
+  }
+
+  .display {
+    font-family: var(--font-display), Georgia, serif;
+    @apply font-normal tracking-[-0.01em];
+  }
+}

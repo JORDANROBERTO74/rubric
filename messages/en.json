@@ -1,0 +1,151 @@
+{
+  "meta": {
+    "title": "Rubric — Governed AI operations",
+    "description": "Rubric turns an AI agent's work into a decision record: the evidence it used, the risk it found, who approved it, what ran, and what changed."
+  },
+  "nav": {
+    "home": "Rubric home",
+    "primary": "Primary",
+    "skip": "Skip to content",
+    "product": "Product",
+    "demo": "Demo",
+    "governance": "Governance",
+    "developers": "Developers",
+    "source": "Source",
+    "openMenu": "Open menu"
+  },
+  "hero": {
+    "eyebrow": "Governed AI operations",
+    "title": "Every agent action,\non the record.",
+    "lead": "Rubric turns an agent's work into a decision you can inspect: the evidence it used, the risk it found, who approved it, what ran, and what changed.",
+    "primary": "See the decision flow",
+    "secondary": "Read the source",
+    "note": "Scripted demo. No live data.",
+    "record": {
+      "label": "Decision record",
+      "account": "Account",
+      "accountValue": "Acme",
+      "signal": "Signal",
+      "signalValue": "Support volume up 38%, platform usage down 17%",
+      "risk": "Risk",
+      "riskValue": "High",
+      "confidence": "Confidence",
+      "confidenceValue": "82%",
+      "gate": "Gate",
+      "gateValue": "Human approval",
+      "status": "Status",
+      "statusValue": "Approved · logged"
+    }
+  },
+  "demo": {
+    "eyebrow": "See it in action",
+    "title": "From a mention to a governed action",
+    "lead": "A teammate asks a question in a thread. The agent gathers evidence across tickets, usage, billing and CRM, scores the risk, routes an approval, executes, and writes the record. Two scenarios run in a loop: churn risk and silent migration.",
+    "note": "The demo interface is in English."
+  },
+  "product": {
+    "eyebrow": "Product",
+    "title": "A decision object, not a chat log",
+    "lead": "Most agents tell you what they did. Rubric keeps the structure that lets someone else check it.",
+    "items": [
+      {
+        "index": "01",
+        "title": "Evidence, not vibes",
+        "body": "Every claim links to the ticket, invoice, usage row or CRM field it came from. If the source is missing, the decision says so."
+      },
+      {
+        "index": "02",
+        "title": "Risk with a threshold",
+        "body": "The agent scores the decision against your policy and stops when confidence is not enough for the action it proposes."
+      },
+      {
+        "index": "03",
+        "title": "Human gates",
+        "body": "Approvals are explicit and role-scoped. Nothing executes until the right person accepts the proposed action."
+      },
+      {
+        "index": "04",
+        "title": "Execution with receipts",
+        "body": "Each step is a logged call: what ran, in what order, and what came back. Failures are part of the record, not hidden."
+      },
+      {
+        "index": "05",
+        "title": "One audit trail",
+        "body": "Input, evidence, risk, approval, execution and outcome share a single identifier you can replay later."
+      }
+    ]
+  },
+  "how": {
+    "eyebrow": "How it works",
+    "title": "Three steps, one record",
+    "steps": [
+      {
+        "index": "01",
+        "title": "Ask",
+        "body": "Someone asks a question where the work already happens. The agent resolves who is asking, for which account, and under which policy."
+      },
+      {
+        "index": "02",
+        "title": "Decide",
+        "body": "It queries the connected systems, grounds each claim, scores the risk and proposes an action with a confidence level."
+      },
+      {
+        "index": "03",
+        "title": "Attest",
+        "body": "A human approves or rejects. The action runs inside its scope and every step closes the record."
+      }
+    ]
+  },
+  "governance": {
+    "eyebrow": "Governance",
+    "title": "Control is the product",
+    "lead": "Governance is not a settings page added at the end. It is the shape of every decision.",
+    "items": [
+      {
+        "title": "Approval before effect",
+        "body": "High-risk decisions cannot execute without a named approver. The gate is recorded with the decision."
+      },
+      {
+        "title": "Scoped access",
+        "body": "The agent reads with the narrowest credentials that answer the question, and writes only inside an approved action."
+      },
+      {
+        "title": "Replayable",
+        "body": "The same inputs produce the same record, so an incident review does not depend on someone's memory of the thread."
+      },
+      {
+        "title": "Bounded actions",
+        "body": "Each action declares its blast radius: what it touches, who it notifies, and what it will not do."
+      }
+    ]
+  },
+  "developers": {
+    "eyebrow": "Developers",
+    "title": "A decision is an object you can inspect",
+    "lead": "The demo on this page models the same shape an integration would use: evidence in, risk assessed, approval requested, action executed, record closed.",
+    "points": [
+      "Evidence and policy are explicit inputs, not prompt text.",
+      "Risk and confidence are returned as fields, not prose.",
+      "Approval and execution are separate, auditable steps."
+    ],
+    "caption": "API sketch · not a published SDK",
+    "docs": "Read the source"
+  },
+  "cta": {
+    "title": "Put the agent's work on the record",
+    "lead": "Read the code, run the demo locally, or use the decision model as a starting point for your own agent.",
+    "primary": "Read the source",
+    "secondary": "Back to the demo"
+  },
+  "footer": {
+    "tagline": "Rubric is a product concept and an open-source demo. The agent shown here is scripted; it is not connected to live systems.",
+    "license": "MIT licensed",
+    "source": "Source on GitHub",
+    "rights": "© 2026 Rubric"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "body": "That route does not exist. The demo only has one page.",
+    "back": "Back to home"
+  }
+}
