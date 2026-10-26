@@ -1,0 +1,67 @@
+<!doctype html>
+<!-- Source for public/og.png. Render at 1200x630 with any headless browser. -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+      body {
+        width: 1200px;
+        height: 630px;
+        background: #101418;
+        color: #f5f2ea;
+        font-family: Georgia, "Times New Roman", serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 72px;
+      }
+      .brand { display: flex; align-items: center; gap: 18px; }
+      .mark { display: flex; flex-direction: column; gap: 5px; position: relative; }
+      .mark::after {
+        content: "";
+        position: absolute;
+        left: 26px;
+        bottom: 0;
+        width: 9px;
+        height: 9px;
+        border-radius: 999px;
+        background: #c8452d;
+      }
+      .mark span { display: block; height: 5px; background: #f5f2ea; }
+      .mark span:nth-child(1) { width: 46px; }
+      .mark span:nth-child(2) { width: 32px; }
+      .mark span:nth-child(3) { width: 20px; }
+      .wordmark { font-size: 34px; letter-spacing: -0.5px; }
+      h1 { font-size: 76px; line-height: 1.02; letter-spacing: -2px; max-width: 900px; font-weight: 400; }
+      .meta { display: flex; align-items: center; gap: 14px; font-family: "Segoe UI", Arial, sans-serif; font-size: 26px; color: #b9b4a8; }
+      .dot { width: 12px; height: 12px; border-radius: 999px; background: #2f6b4f; }
+      footer {
+        display: flex;
+        justify-content: space-between;
+        font-family: "Segoe UI", Arial, sans-serif;
+        font-size: 22px;
+        color: #b9b4a8;
+        border-top: 1px solid #3a3f45;
+        padding-top: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="brand">
+      <div class="mark"><span></span><span></span><span></span></div>
+      <div class="wordmark">Rubric</div>
+    </div>
+    <div>
+      <h1>Every agent action, on the record.</h1>
+      <div class="meta" style="margin-top: 28px">
+        <div class="dot"></div>
+        Evidence · Risk · Approval · Execution · Audit
+      </div>
+    </div>
+    <footer>
+      <span>Governed AI operations</span>
+      <span>getrubric.vercel.app</span>
+    </footer>
+  </body>
+</html>
