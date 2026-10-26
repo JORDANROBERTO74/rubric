@@ -69,7 +69,7 @@ docs/                 screenshots, OG card source, provenance
 
 Any host that runs Next.js works. On Vercel: import the repository, keep the default build command, and deploy — no environment variables are required. Production build output is static for both locales.
 
-Live site: <https://getrubric.vercel.app>
+Live site: <https://rubric-hq.vercel.app>
 
 ## Status and scope
 

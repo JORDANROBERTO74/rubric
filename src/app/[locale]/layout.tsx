@@ -34,7 +34,7 @@ const mono = JetBrains_Mono({
   display: "swap",
 });
 
-const siteUrl = "https://getrubric.vercel.app";
+const siteUrl = "https://rubric-hq.vercel.app";
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));

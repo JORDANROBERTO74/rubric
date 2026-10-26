@@ -31,5 +31,5 @@
 ## Deployment
 
 - Repo: <https://github.com/JORDANROBERTO74/rubric>
-- Live: <https://getrubric.vercel.app>
+- Live: <https://rubric-hq.vercel.app>
 - Release: `v1.0.0`
